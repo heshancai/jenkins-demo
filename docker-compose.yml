@@ -1,9 +1,10 @@
 version: '3.1'
+#管理服务
 services:
   jenkinstest:
-    build:
-      context: ./docker
+    build:    #基于当前路径下docker文件夹下Dockerfile文件进行构建镜像
+     context: ./docker
       dockerfile: Dockerfile
-    ports:
+    ports:    #根据镜像创建容器
       - 8899:8899
     container_name: myJenkinsTest
