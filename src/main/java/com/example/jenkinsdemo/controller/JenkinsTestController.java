@@ -15,7 +15,7 @@ public class JenkinsTestController {
 
     @RequestMapping("/testJenkins")
     public String testJenkins(){
-        return "测试jenkins构建发布成功java程序";
+        return "测试jenkins构建发布成功java程序:"+"666666";
     }
 
 }
